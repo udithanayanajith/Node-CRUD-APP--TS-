@@ -24,8 +24,6 @@ router.post("/addDrugs", async (req, res) => {
     gName: req.body.d_name,
     dBrand: req.body.d_brand,
   };
-  console.log(data);
-
   try {
     const check = await DrugModel.findOne({
       gName: req.body.d_name,

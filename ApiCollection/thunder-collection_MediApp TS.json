@@ -1,0 +1,115 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "MediApp TS",
+    "dateExported": "2023-06-14T08:07:17.035Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "88c24205-0fc6-49a9-a7f6-d4ac7ce559b5",
+            "colId": "19c802da-a10b-48b0-8fad-a97e0417e646",
+            "containerId": "",
+            "name": "GetAll",
+            "url": "http://localhost:3000/api/prod/all",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-14T07:58:31.781Z",
+            "modified": "2023-06-14T07:58:42.435Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e7069d12-7574-4c5d-8c20-54de55b8d084",
+            "colId": "19c802da-a10b-48b0-8fad-a97e0417e646",
+            "containerId": "",
+            "name": "AllOptions",
+            "url": "http://localhost:3000/api/prod/allOptions",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-14T07:59:03.843Z",
+            "modified": "2023-06-14T08:01:55.329Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c67355b7-9548-4c26-954d-4f83b0bbda72",
+            "colId": "19c802da-a10b-48b0-8fad-a97e0417e646",
+            "containerId": "",
+            "name": "Search",
+            "url": "http://localhost:3000/api/prod/searchDrugs?item=gen2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-14T07:59:08.370Z",
+            "modified": "2023-06-14T08:03:06.350Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "item",
+                    "value": "gen2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "a0d9e924-345d-414e-9cc3-dcddacd7cd0d",
+            "colId": "19c802da-a10b-48b0-8fad-a97e0417e646",
+            "containerId": "",
+            "name": "Delete",
+            "url": "http://localhost:3000/api/prod/deleteDrug?id=648974be502b432f03bd618e",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-06-14T08:03:58.915Z",
+            "modified": "2023-06-14T08:06:57.514Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "648974be502b432f03bd618e",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "43256eff-dcda-42be-a6da-5171a89de02b",
+            "colId": "19c802da-a10b-48b0-8fad-a97e0417e646",
+            "containerId": "",
+            "name": "AddDrug",
+            "url": "http://localhost:3000/api/prod/addDrugs",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-06-14T08:04:32.354Z",
+            "modified": "2023-06-14T08:05:18.534Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"d_name\": \"GTs1\",\r\n    \"d_brand\": \"Ts1\"\r\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "736b711c-750e-4d5c-8f64-534db4662449",
+            "colId": "19c802da-a10b-48b0-8fad-a97e0417e646",
+            "containerId": "",
+            "name": "UpdateDrug",
+            "url": "http://localhost:3000/api/prod/updateDrug",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-06-14T08:05:51.277Z",
+            "modified": "2023-06-14T08:06:43.361Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "\n    {\n    \"id\": \"648974be502b432f03bd618e\",\n    \"d_name\": \"GTs1\",\n    \"d_brand\": \"update\"\n  }",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
