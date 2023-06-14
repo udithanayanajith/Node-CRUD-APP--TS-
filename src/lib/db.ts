@@ -1,0 +1,16 @@
+import mongooseDB from "mongoose"
+
+ const  dbMongoConfig=async()=> {
+    mongooseDB
+      .connect(
+        "mongodb+srv://Admin:Admin@cluster0.tooena7.mongodb.net/medi?retryWrites=true&w=majority"
+      )
+      .then(() => {
+        console.log("Atlas DataBase is Connected");
+      })
+      .catch((err) => {
+        console.log(" Atlas DataBase is Not connected");
+        console.log(err);
+      });
+ }
+ export default dbMongoConfig
